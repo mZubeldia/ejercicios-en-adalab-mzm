@@ -1,0 +1,15 @@
+p {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+.inline {
+  display: inline;
+  background-color: blueviolet;
+}
+.inlineBlock {
+  display: inline-block;
+  background-color: seagreen;
+  height: 100px;
+  width: 100px;
+}
