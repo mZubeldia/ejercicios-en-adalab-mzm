@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+}
+
+.item {
+  min-width: 20vh;
+  box-sizing: border-box;
+  border: solid green;
+}
+
+.header {
+  order: 0;
+  flex-grow: 4;
+}
