@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.articulos {
+  border: solid black;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.ultimoArticulo {
+  order: 0;
+}
+
+.imagen {
+  height: 150px;
+  width: 300px;
+}
