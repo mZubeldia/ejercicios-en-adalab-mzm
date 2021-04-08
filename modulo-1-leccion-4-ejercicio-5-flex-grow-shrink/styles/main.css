@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100%;
+  border: solid purple;
+}
+
+.header {
+  min-height: 50vh;
+}
+
+.main {
+  min-height: 55vh;
+}
+
+.footer.item {
+  height: 10vh;
+}
