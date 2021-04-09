@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
 }
 
 .articulos {
@@ -12,7 +11,8 @@
 }
 
 .ultimoArticulo {
-  order: 0;
+  order: -1;
+  width: 100%;
 }
 
 .imagen {

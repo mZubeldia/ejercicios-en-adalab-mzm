@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: row;
+}
+
+.mini {
+  height: 10vw;
+}
+
+.item {
+  flex-grow: 1;
+  flex-basis: content;
+  width: 15vh;
+}
+
+.header {
+  background-color: orange;
+}
+
+.aside1 {
+  background-color: yellow;
+}
+
+.article {
+  background-color: blue;
+}
+
+.aside2 {
+  background-color: pink;
+}
+
+.footer {
+  background-color: green;
+}
