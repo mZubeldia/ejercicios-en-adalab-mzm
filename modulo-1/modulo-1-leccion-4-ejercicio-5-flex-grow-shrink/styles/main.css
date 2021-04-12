@@ -1,27 +1,27 @@
 .container {
   display: flex;
   box-sizing: border-box;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 300vh;
-  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 200vh;
 }
 
 .header {
   background-color: lightgray;
   max-height: 10vh;
-  flex-grow: 2;
 }
 
 .main {
   background-color: lightgreen;
+  flex-grow: 2;
 }
 
 .footer {
   background-color: lightsalmon;
   max-height: 10vw;
+  align-self: flex-end;
 }
 
 .item {
-  flex-basis: 100vw;
+  width: 100%;
 }

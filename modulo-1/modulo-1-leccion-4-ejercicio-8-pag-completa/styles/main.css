@@ -1,0 +1,54 @@
+.cabecera {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin: auto;
+}
+
+.lista {
+  list-style-type: none;
+  display: inline;
+  display: flex;
+}
+
+.itemL {
+  padding: 10px;
+}
+.containerSupremo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 600px;
+  margin: auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+.detalles {
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 20%;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.articulo1 {
+  margin-left: 15%;
+  margin-right: 15%;
+  max-height: 600px;
+}
