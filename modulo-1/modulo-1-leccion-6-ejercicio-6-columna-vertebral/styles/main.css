@@ -1,0 +1,28 @@
+.contenedor {
+  margin: 20px 20px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.wrapper {
+  font-size: 18px;
+  line-height: 24px;
+  background: red;
+}
+
+@media all and (min-width: 768px) {
+  .contenedor {
+    margin: 30px 40px auto 40px;
+  }
+  .titulo {
+    font-size: 28px;
+  }
+  .wrapper {
+    font-size: 16px;
+    line-height: 20px;
+    background: green;
+  }
+}
