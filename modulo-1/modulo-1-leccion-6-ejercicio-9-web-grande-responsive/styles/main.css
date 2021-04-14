@@ -1,0 +1,38 @@
+:root {
+  background-color: lightgrey;
+}
+
+/* mobile */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  background-color: limegreen;
+}
+
+.main-container {
+  background-color: yellow;
+  flex-grow: 1;
+}
+
+.cuadro {
+  display: none;
+}
+
+.footer-container {
+  background-color: blue;
+}
+
+/* tablet */
+
+@media all and (min-width: 480px) and (max-width: 1000px) {
+  .container {
+    flex-direction: row;
+  }
+}
