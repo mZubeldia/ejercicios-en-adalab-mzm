@@ -1,5 +1,6 @@
 :root {
   background-color: lightgrey;
+  box-sizing: border-box;
 }
 
 /* mobile */
@@ -16,17 +17,41 @@
   background-color: limegreen;
 }
 
+.title-container {
+  font-size: 1.875rem;
+  font-weight: bold;
+  padding-bottom: 1.25rem;
+}
+
 .main-container {
   background-color: yellow;
   flex-grow: 1;
+}
+
+.title-main {
+  font-size: 1.55rem;
+  font-weight: bold;
 }
 
 .cuadro {
   display: none;
 }
 
+.middle-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .footer-container {
   background-color: blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title-footer {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 /* tablet */
@@ -34,5 +59,66 @@
 @media all and (min-width: 480px) and (max-width: 1000px) {
   .container {
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .header-container {
+    align-self: flex-start;
+  }
+  .middle-wrapper {
+    width: 100%;
+    height: 75%;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .caja-container {
+    position: relative;
+  }
+
+  .footer-container {
+    margin: 0;
+  }
+
+  .main-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+  .cuadro {
+    display: block;
+    position: relative;
+    background-color: hotpink;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    flex-direction: row;
+  }
+  .middle-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-container {
+    height: 70%;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    bottom: 0;
+  }
+
+  .footer-container {
+    height: 70%;
   }
 }
