@@ -101,24 +101,23 @@
 @media all and (min-width: 1000px) {
   .container {
     display: flex;
-    width: 100vw;
-    height: 80vh;
     flex-direction: row;
+    width: 100vw;
+    height: 100vh;
   }
   .middle-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-grow: 1;
   }
 
   .main-container {
-    height: 70%;
     margin-left: 2rem;
     margin-right: 1rem;
     bottom: 0;
   }
 
   .footer-container {
-    height: 70%;
   }
 }
