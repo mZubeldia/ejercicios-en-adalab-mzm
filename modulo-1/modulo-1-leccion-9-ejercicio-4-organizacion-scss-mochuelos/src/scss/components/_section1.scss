@@ -1,3 +1,8 @@
+.page__main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page__main__container1 {
   @include txt(rem(18), "Antonio", rem(40), $color-lgadalab);
   @include marginContainer(rem(50), rem(80));
