@@ -2,6 +2,8 @@
   border: solid 3px red;
   @include txt(rem(18), "Antonio", rem(40), $color-secondary);
   @include marginContainer(rem(50), rem(80));
+  flex-shrink: 2;
+  height: 30%;
   @include media(780px) {
     border: dotted 6px blue;
   }
