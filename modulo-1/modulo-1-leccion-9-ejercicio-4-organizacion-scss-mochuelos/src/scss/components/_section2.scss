@@ -1,0 +1,15 @@
+.page__main__container2 {
+  border: solid 3px red;
+  @include txt(rem(18), "Antonio", rem(40), $color-lgadalab);
+  @include marginContainer(rem(50), rem(80));
+  @include media(780px) {
+    border: dotted 6px blue;
+  }
+  @include media(1200px) {
+    border: solid 6px $color-titles;
+  }
+}
+
+.title__page__main__container2 {
+  color: $color-titles;
+}
