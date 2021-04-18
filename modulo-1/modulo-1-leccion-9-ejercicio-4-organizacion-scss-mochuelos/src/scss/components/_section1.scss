@@ -2,4 +2,13 @@
   @include txt(rem(18), "Antonio", rem(40), $color-lgadalab);
   @include marginContainer(rem(50), rem(80));
   border: solid 3px green;
+
+  @include media(768px) {
+    font-size: rem(25);
+    background-color: yellow;
+  }
+  @include media(1280px) {
+    font-size: rem(40);
+    background-color: purple;
+  }
 }

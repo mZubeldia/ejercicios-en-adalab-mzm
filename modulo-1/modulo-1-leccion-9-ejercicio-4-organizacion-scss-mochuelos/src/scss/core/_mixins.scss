@@ -13,3 +13,9 @@
 @function rem($pixels) {
   @return ($pixels / $defaultFontSize * 1rem);
 }
+
+@mixin media($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
