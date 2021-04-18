@@ -1,0 +1,15 @@
+@mixin txt($fontSize, $fontFamily, $lineHeight, $fontColor) {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  line-height: $lineHeight;
+  color: $fontColor;
+}
+
+@mixin marginContainer($marginLeft, $marginRight) {
+  margin-left: $marginLeft;
+  margin-right: $marginRight;
+}
+
+@function rem($pixels) {
+  @return ($pixels / $defaultFontSize * 1rem);
+}
