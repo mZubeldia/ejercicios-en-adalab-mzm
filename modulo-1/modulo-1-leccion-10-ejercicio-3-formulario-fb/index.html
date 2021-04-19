@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Formularios</title>
+
+</head>
+<body>
+    
+    <h2>Create an accout</h2>
+    <p>It's free and always will be.</p>
+
+    <form action="/signup" method="post">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="fullName" />
+        <label for="surName">Surname</label>
+        <input type="text" id="surName" name="fullName" />
+        <label for="emailAddress">Email or mobile number</label>
+        <input type="email" id="emailAddress" name="emailAddress" />
+        <label for="verifyEmail">Re-enter email or mobile number</label>
+        <input type="email" id="verifyEmail" name="emailAddress" />
+
+        Birthday
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <label for="gender">
+            <input id="gender"
+            type="radio"
+            name="gender"
+            />
+            Male
+        </label>
+        <label for="gender">
+            <input id="gender"
+            type="radio"
+            name="gender"
+            />
+            Female
+        </label>
+
+        <input type="hidden" id="productid" name="productid" value="mybrowser" />
+
+        <label for="myHeight">What is your height?</label>
+        <input placeholder="150cm" type="email" id="myHeight" name="emailAddress" />
+
+        <input type="submit" value="Enviar" />
+      </form>
+
+</body>
+</html>
