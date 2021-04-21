@@ -5,7 +5,7 @@
   display: grid;
   background: pink;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 20vh 20vh;
   height: 100vh;
 }
 .header {
@@ -16,11 +16,12 @@
 .menu {
   background-color: purple;
   grid-column: 1/6;
-  grid-row: span 2; //por qué no se expande arriba?
+  grid-row: span 12; //por qué no se expande arriba?
 }
 .content {
   background-color: orange;
   grid-column: 6/13;
+  grid-row: span 12;
 }
 .footer {
   background-color: blue;

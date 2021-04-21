@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  border: solid 2px black;
+}
+
+.image-container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: absolute;
+  color: purple;
+  transition: color ease 0.8s;
+  animation-name: pepe;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+
+  @keyframes pepe {
+    0% {
+      box-shadow: 0 0 4px rgba(white, 0.5);
+      bottom: 1em;
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(white, 0.5);
+      bottom: -0.5em;
+    }
+    85% {
+      box-shadow: 0 0 30px rgba(white, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 4px rgba(white, 0.25);
+      bottom: 1em;
+    }
+  }
+
+  &:hover {
+    color: green;
+  }
+}
