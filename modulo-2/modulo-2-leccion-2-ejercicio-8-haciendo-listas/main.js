@@ -9,20 +9,19 @@ const secondDogName = 'Luna';
 const thirdDogImage = 'https://images.dog.ceo/breeds/affenpinscher/n02110627_7065.jpg';
 const thirdDogName = 'Lana';
 
-const listElementsToShow = `<div class="dog-list">
-    <ul>
-        <li>${firstDogName}
-        <img>${firstDogImage}</img>
-        </li>
-        <li>${secondDogName}
-        <img>${secondDogImage}</img>
-        </li>
-        <li>${thirdDogName}
-        <img>${thirdDogImage}</img>
-        </li>
-    </ul>
-
-</div>`;
-
 const list = document.querySelector(".lista");
+
+const listElementsToShow = `
+    
+    <li>${firstDogName}
+    <img src="${firstDogImage}">
+    </li>
+    <li>${secondDogName}
+    <img src="${secondDogImage}">
+    </li>
+    <li>${thirdDogName}
+    <img src="${thirdDogImage}">
+    </li>`;
+
+
 list.innerHTML = listElementsToShow;
