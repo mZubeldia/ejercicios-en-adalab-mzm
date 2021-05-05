@@ -14,14 +14,16 @@ const list = document.querySelector(".lista");
 const listElementsToShow = `
     
     <li>${firstDogName}
-    <img src="${firstDogImage}">
+        <img src="${firstDogImage}">
     </li>
     <li>${secondDogName}
-    <img src="${secondDogImage}">
+        <img src="${secondDogImage}">
     </li>
     <li>${thirdDogName}
-    <img src="${thirdDogImage}">
+        <img src="${thirdDogImage}">
     </li>`;
 
 
 list.innerHTML = listElementsToShow;
+
+console.log(firstDogName);
