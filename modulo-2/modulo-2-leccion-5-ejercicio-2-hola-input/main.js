@@ -4,13 +4,9 @@ const button = document.querySelector('.js-btn');
 const nameInput = document.querySelector('.js-name');
 
 function hi () {
-nameInput = nameInput.value;
 
-
-
-
-//const consoleText = console.log `Hola ${userName}`;
-//return console.log `Hola, ${nameInput}`;
+const userInput = nameInput.value;
+console.log (`Hola ${userInput}`);
 }
 
 button.addEventListener('click', hi);
