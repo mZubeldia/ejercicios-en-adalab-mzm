@@ -1,0 +1,19 @@
+* {
+  background-color: rgb(231, 207, 207);
+}
+
+.btn {
+  height: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: #fff;
+  color: red;
+}
+
+.btn-alarm {
+  height: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: red;
+  color: #fff;
+}
