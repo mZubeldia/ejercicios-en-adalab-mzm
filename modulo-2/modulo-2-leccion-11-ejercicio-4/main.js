@@ -20,7 +20,7 @@ text.innerHTML = inputValue;
 
 arr.push(inputValue);
 
-saveInput (inputValue);
+saveInput ();
 }
 
 
