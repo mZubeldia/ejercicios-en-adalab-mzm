@@ -12,12 +12,26 @@ const tasks = [
 
   console.log(tasks.length);
 
-  function paintTasks () {
 
-    let html = "";
+
+
+  function paintTasks () {
+    
+    let html = ""; //por qué necesito esta variable html?
+    let addClass = "";
+    let checked ="";
+    
     for (let i= 0; i< tasks.length; i++){
-      let task = tasks[i];
-      html += `<li> <input type ="checkbox" value="${i}" /> ${task.name} </li> `;
+      let task = tasks[i]; //por qué declaro variable task con el array?
+      
+      if (task.completed === true) {
+      addClass = "completed";
+      checked = "checked";
+      } else {
+        addClass = "";
+      }
+
+      html += `<li class="${addClass}"> <input type ="checkbox" value="${i}" ${checked} /> ${task.name} </li> `;
       
     }
     ulElement.innerHTML = html;
