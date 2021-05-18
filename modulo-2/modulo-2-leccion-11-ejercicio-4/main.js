@@ -1,29 +1,52 @@
 'use strict';
 
-const input = document.querySelector(".js-input");
-const text = document.querySelector(".js-parag");
+const inputElementName = document.querySelector(".js-input");
+const inputElementSurname = document.querySelector(".js-input2");
+const pElement = document.querySelector(".js-p");
+const formElement = document.querySelector(".form");
+const inputObject = {};
 
-const arr = []; // crear array vacío para almacenar valores del input
-
-function saveInput (){ // guarda el valor del input
-localStorage.setItem('name', JSON.stringify(arr)); // guarda los datos y los convierte en string
-
-//const nameSaved = localStorage.getItem('name');
-//console.log(nameSaved); cosolear input guardado
+function handleEvent(ev) {
+  const eventTarget = ev.target;
 }
 
+function renderResult() {
+  pElement.innerHTML = `Valor del input: ${inputElementName.value} ${inputElementSurname.value}`;
 
-
-function handlerParagraph () { // pinta el valor del input en el párrafo
-const inputValue = input.value;
-text.innerHTML = inputValue;
-
-arr.push(inputValue);
-
-saveInput ();
+  // console.log(inputArray);
 }
 
+function setLocalStorage2() {
+  //setItem recibe siempre dos parámetros en STRING, los que recibe y los que metes
+  localStorage.setItem("localList2", JSON.stringify(inputObject));
+}
 
+function getLocalStorage2() {
+  //hay que volver convertirlo de STRING a lo que sea que fuese en un principio, en este caso un formato JSON
+  let list = JSON.parse(localStorage.getItem("localList2"));
+  console.log(list);
+}
 
+function handleInput(ev) {
+  //inputArray.push(ev.target.value);
+  const inputName = ev.target.name;
+  const inputValue = ev.target.value;
+  console.log(inputName, inputValue);
 
-input.addEventListener("keyup", handlerParagraph);
+  //inputObject.surname = inputValue;
+  //inputObject['surname'] = inputValue;
+  inputObject[inputName] = inputValue;
+  console.log(inputObject);
+
+  /*inputObject = {
+    name: 'asf',
+    surname: 'asdfsd'
+  }*/
+  renderResult();
+  setLocalStorage2();
+}
+
+formElement.addEventListener("keyup", handleInput);
+
+console.log("Ejercicio 4");
+setLocalStorage2();
