@@ -1,0 +1,35 @@
+.article {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: #fff;
+}
+
+.article-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 20vh;
+}
+.article-title-pic {
+  margin-right: 5px;
+  border: 2px solid black;
+}
+.article-title-text {
+  margin-left: 5px;
+}
+.article-subt {
+  font-size: 15px;
+}
+.article-footer {
+  display: flex;
+}
+.item-footer {
+  width: 6rem;
+  justify-content: space-around;
+}
+.likes-count {
+  align-self: right;
+}
