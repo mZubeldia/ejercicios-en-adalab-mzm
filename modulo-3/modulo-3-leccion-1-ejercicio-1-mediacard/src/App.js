@@ -1,5 +1,5 @@
 import "./App.css";
-import "./foto.png";
+import foto from "./images/foto.png";
 
 function App() {
   return (
@@ -7,9 +7,9 @@ function App() {
       <div className="article-title-wrapper">
         <img
           className="article-title-pic"
-          src="./foto.png"
+          src={foto}
           className="art-profile-pic"
-          alt="profile picture"
+          alt="unicornio"
         />
         <div className="article-title-text">
           <h1 className="article-title">Alex Fernández</h1>
