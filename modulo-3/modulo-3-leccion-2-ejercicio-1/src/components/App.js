@@ -1,6 +1,7 @@
 import React from "react";
 import RandomCat from "./RandomCat";
 import MediaCard from "./MediaCard";
+import CatList from "./CatList";
 
 class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class App extends React.Component {
           likes="150"
           heartEmoji="❤️"
         />
+        <CatList />
       </div>
     );
   }
