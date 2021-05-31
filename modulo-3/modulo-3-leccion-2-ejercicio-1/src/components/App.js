@@ -7,7 +7,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <RandomCat />
-        <MediaCard />
+        <MediaCard
+          name="Alex Fernández"
+          date="Lunes 26 de junio"
+          likes="150"
+          heartEmoji="❤️"
+        />
       </div>
     );
   }

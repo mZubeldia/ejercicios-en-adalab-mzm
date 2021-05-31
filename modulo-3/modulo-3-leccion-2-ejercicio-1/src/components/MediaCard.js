@@ -2,28 +2,36 @@ import "../App.css";
 import foto from "../images/foto.png";
 import React from "react";
 
+/*const textClassName = "paragraph-text"; //probando ejercicio 2 de la 3.1
+const firstPaDescription = React.createElement(
+  "p",
+  { className: textClassName },
+  "Párrafo1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Párrafo1 Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+);
+const secondPaDescription = React.createElement(
+  "p",
+  { className: textClassName },
+  "Párrafo2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Párrafo1 Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+);*/
+
 class MediaCard extends React.Component {
   render() {
+    console.log(this.props);
     return (
       <article className="article">
         <div className="article-title-wrapper">
-          <img
-            className="article-title-pic"
-            src={foto}
-            className="art-profile-pic"
-            alt="unicornio"
-          />
+          <img src={foto} className="art-profile-pic" alt="unicornio" />
           <div className="article-title-text">
-            <h1 className="article-title">Alex Fernández</h1>
-            <h2 className="article-subt">Lunes 26 de junio</h2>
+            <h1 className="article-title">{this.props.name}</h1>
+            <h2 className="article-subt">{this.props.date}</h2>
           </div>
         </div>
         <div className="article-text-wrapper">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            maxime, dolorem quo dolores tempore inventore dolorum est nulla
-            omnis maiores reiciendis neque cupiditate error, voluptates pariatur
-            unde non tempora quibusdam?
+          <p className="textClassName">
+            Párrafo1 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Expedita maxime, dolorem quo dolores tempore inventore dolorum est
+            nulla omnis maiores reiciendis neque cupiditate error, voluptates
+            pariatur unde non tempora quibusdam?
           </p>
           <p>
             Sequi rem facere deserunt, quos incidunt mollitia odit asperiores,
@@ -37,7 +45,9 @@ class MediaCard extends React.Component {
         </div>
         <div className="article-footer">
           <span className="more-info item-footer">Leer más...</span>
-          <span className="likes-count item-footer">❤️</span>
+          <span className="likes-count item-footer">
+            {this.props.likes} {this.props.heartEmoji}
+          </span>
         </div>
       </article>
     );

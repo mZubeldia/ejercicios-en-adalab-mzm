@@ -4,6 +4,10 @@
   flex-direction: column;
   margin: 20px;
   background-color: #fff;
+  border: solid 1px grey;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .article-title-wrapper {
@@ -13,10 +17,7 @@
   align-items: center;
   height: 20vh;
 }
-.article-title-pic {
-  margin-right: 5px;
-  border: 2px solid black;
-}
+
 .article-title-text {
   margin-left: 5px;
 }
@@ -27,15 +28,18 @@
   display: flex;
 }
 .item-footer {
-  width: 6rem;
-  justify-content: space-around;
+  display: flex;
+  align-content: space-between;
 }
 .likes-count {
   align-self: right;
+  width: 80px;
 }
 
 .art-profile-pic {
   height: 50%;
   border: 1px solid grey;
   border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 5px;
 }
