@@ -1,6 +1,6 @@
 import React from "react";
 import RandomCat from "./RandomCat";
-//import MediaCard from "./MediaCard";
+import MediaCard from "./MediaCard";
 import CatList from "./CatList";
 import MediaList from "./MediaList";
 
@@ -11,6 +11,7 @@ class App extends React.Component {
         <RandomCat />
         <MediaList name date likes heartEmoji />
         <CatList />
+        <MediaCard name date likes heartEmoji />
       </div>
     );
   }
