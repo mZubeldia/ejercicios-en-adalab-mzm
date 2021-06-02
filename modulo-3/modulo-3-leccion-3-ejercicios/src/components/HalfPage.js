@@ -6,13 +6,7 @@ import React from "react";
 
 const HalfPage = (props) => {
   console.log(props);
-  return (
-    <section className="half-section">
-      <h1>{props.title}</h1>
-      <h2>{props.secondTitle}</h2>
-      <p>{props.text}</p>
-    </section>
-  );
+  return <section className="half-section">{props.children}</section>;
 };
 
 export default HalfPage;
