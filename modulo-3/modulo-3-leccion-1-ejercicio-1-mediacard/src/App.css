@@ -13,9 +13,11 @@
   align-items: center;
   height: 20vh;
 }
-.article-title-pic {
+.art-profile-pic {
   margin-right: 5px;
   border: 2px solid black;
+  border-radius: 50%;
+  width: 80px;
 }
 .article-title-text {
   margin-left: 5px;
