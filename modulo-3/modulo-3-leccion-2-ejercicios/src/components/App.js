@@ -11,7 +11,7 @@ class App extends React.Component {
         <RandomCat />
         <MediaList />
         <CatList width="400" height="200" />
-        <MediaCard name date likes heartEmoji />
+        <MediaCard />
       </div>
     );
   }
