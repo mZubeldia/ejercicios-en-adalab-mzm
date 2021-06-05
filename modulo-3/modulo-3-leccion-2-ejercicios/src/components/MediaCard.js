@@ -2,18 +2,6 @@ import "../App.css";
 import foto from "../images/foto.png";
 import React from "react";
 
-/*const textClassName = "paragraph-text"; //probando ejercicio 2 de la 3.1
-const firstPaDescription = React.createElement(
-  "p",
-  { className: textClassName },
-  "Párrafo1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Párrafo1 Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-);
-const secondPaDescription = React.createElement(
-  "p",
-  { className: textClassName },
-  "Párrafo2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Párrafo1 Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-);*/
-
 /* //lección 2.3 ejercicio 1 y 2
 class MediaCard extends React.Component {
   render() {

@@ -9,8 +9,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <RandomCat />
-        <MediaList name date likes heartEmoji />
-        <CatList />
+        <MediaList />
+        <CatList width="400" height="200" />
         <MediaCard name date likes heartEmoji />
       </div>
     );

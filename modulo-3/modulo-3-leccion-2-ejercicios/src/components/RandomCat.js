@@ -11,6 +11,8 @@ class RandomCat extends React.Component {
         <img
           src={`http://lorempixel.com/400/200/cats/${randomCat}`}
           alt="Random cat"
+          width={this.props.width !== null ? this.props.width : 400}
+          height={this.props.height !== null ? this.props.height : 200}
         />
       </a>
     );
