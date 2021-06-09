@@ -1,8 +1,12 @@
+import data from "../data/clubs.json";
+import ClubList from "./ClubList";
+//import App from "../styles/App.scss";
+
 function App() {
   return (
-    <div className="App">
-      <p>Holi</p>
-    </div>
+    <main className="main">
+      <ClubList data={data} />
+    </main>
   );
 }
 
